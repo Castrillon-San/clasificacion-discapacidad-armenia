@@ -1,0 +1,107 @@
+{
+  "modelo": "Votación",
+  "hiperparametros": {
+    "modelo__voting": "soft"
+  },
+  "predictoras": [
+    "edad",
+    "vigencia",
+    "genero",
+    "comuna",
+    "eps",
+    "regimen",
+    "condicion_victima"
+  ],
+  "variables_numericas": [
+    "edad",
+    "vigencia"
+  ],
+  "variables_categoricas": [
+    "genero",
+    "comuna",
+    "eps",
+    "regimen",
+    "condicion_victima"
+  ],
+  "opciones": {
+    "genero": [
+      "Femenino",
+      "Masculino"
+    ],
+    "comuna": [
+      "ALFONSO LOPEZ",
+      "CENTENARIO",
+      "EL BOSQUE",
+      "EL CAFETERO",
+      "FRANCISCO DE PAULA SANTANDER",
+      "LIBERTADORES",
+      "LOS FUNDADORES",
+      "No reporta",
+      "QUIMBAYA",
+      "RUFINO JOSE CUERVO",
+      "RURAL",
+      "SAN JOSE"
+    ],
+    "eps": [
+      "Asmet Salud",
+      "Cajacopi",
+      "Capital Salud",
+      "Compensar",
+      "Coosalud",
+      "Cosmitet",
+      "Emssanar",
+      "Famisanar",
+      "Medimas",
+      "No reporta",
+      "Nueva EPS",
+      "S.O.S",
+      "Salud Total",
+      "Sanidad Militar",
+      "Sanitas",
+      "Savia Salud",
+      "Sura"
+    ],
+    "regimen": [
+      "Contributivo",
+      "Especial",
+      "No reporta",
+      "Subsidiado"
+    ],
+    "condicion_victima": [
+      "No",
+      "No reporta",
+      "Si"
+    ]
+  },
+  "rango_edad": [
+    0,
+    95
+  ],
+  "vigencias_entrenamiento": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "clases": [
+    "Física",
+    "Intelectual",
+    "Múltiple",
+    "Psicosocial",
+    "Sensorial"
+  ],
+  "metricas_prueba": {
+    "accuracy": 0.3407,
+    "precision_macro": 0.3302,
+    "recall_macro": 0.3669,
+    "f1_macro": 0.3272
+  },
+  "versiones": {
+    "python": "3.13.16",
+    "scikit-learn": "1.6.1",
+    "imbalanced-learn": "0.14.2",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3"
+  }
+}
