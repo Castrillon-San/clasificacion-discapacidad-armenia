@@ -42,15 +42,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Despliegue en Streamlit Community Cloud
-
-1. Subir todos los archivos de la estructura anterior a un repositorio público de GitHub, incluida la carpeta `.streamlit`.
-2. En share.streamlit.io, crear una aplicación nueva con el repositorio, la rama `main` y el archivo `app.py`.
-3. En *Advanced settings*, seleccionar Python 3.13, la versión con que se entrenó el modelo.
-4. Desplegar y copiar la URL pública.
-
-Las versiones de scikit-learn e imbalanced-learn en `requirements.txt` deben coincidir con las del entrenamiento; de lo contrario, el modelo serializado puede fallar al cargarse.
-
 ## Limitaciones
 
 - Las variables disponibles no incluyen información clínica, que es la que determina la categoría de discapacidad; por ello, el desempeño absoluto es moderado.
